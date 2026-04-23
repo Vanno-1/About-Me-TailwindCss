@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  /* I tuoi nuovi Breakpoint personalizzati */
+  --breakpoint-md: 750px;
+  --breakpoint-lg: 1080px;
+}
+
+/* Impostiamo gli stili predefiniti per i tag HTML */
+@layer base {
+  /* Modifica Responsiva: il body passa dalle misure "m" alle "l" a 1080px */
+  body {
+    @apply font-sans font-normal antialiased text-slate-800 text-[1rem] leading-[1.5rem] lg:text-[1.25rem] lg:leading-[1.75rem];
+  }
+
+  /* Impostiamo lo <strong> globale per corrispondere ai tuoi "strong" utilities */
+  strong {
+    @apply font-semibold;
+  }
+
+  /* Configurazione automatica per H1 */
+  h1 {
+    @apply font-bold text-[1.5rem] leading-[1.75rem];
+  }
+
+  /* Configurazione automatica per H2 */
+  h2 {
+    @apply font-bold text-[1.5rem] leading-[1.75rem];
+  }
+}
+
+@utility body-l {
+  @apply font-normal text-[1.25rem] leading-[1.75rem];
+}
+
+@utility body-l-strong {
+  @apply font-semibold text-[1.25rem] leading-[1.75rem];
+}
+
+@utility body-m {
+  @apply font-normal text-[1rem] leading-[1.5rem];
+}
+
+@utility body-m-strong {
+  @apply font-semibold text-[1rem] leading-[1.5rem];
+}
+
+@utility label {
+  @apply font-normal text-[0.75rem] leading-[1rem];
+}
+
+/* --- Bottoni personalizzati --- */
+
+@utility button-default-m {
+  @apply inline-flex py-[0.75rem] px-[1.5rem] justify-center items-center rounded-[4px] border-none cursor-pointer no-underline;
+  @apply bg-[#212121] text-[#ffffff] body-m-strong;
+  @apply transition-all duration-[0.1s] ease-[ease];
+  @apply hover:bg-[#2b2b2b] hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.40)];
+  @apply active:scale-[0.98] active:bg-[#1A1A1A] active:shadow-[0_1.96px_3.92px_0_rgba(0,0,0,0.80)];
+}
+
+@utility button-default-l {
+  @apply inline-flex py-[1.25rem] px-[3.5rem] justify-center items-center rounded-[6px] border-none cursor-pointer no-underline;
+  @apply bg-[#212121] text-[#ffffff] body-m-strong;
+  @apply transition-all duration-[0.1s] ease-[ease];
+  @apply hover:bg-[#2b2b2b] hover:shadow-[0_4px_15px_0_rgba(0,0,0,0.40)];
+  @apply active:scale-[0.98] active:bg-[#1A1A1A] active:shadow-[0_1.96px_3.92px_0_rgba(0,0,0,0.80)];
+}
+
+/* --- LA LOGICA DELLA GRIGLIA FIGMA --- */
+@utility layout-container {
+  /* Imposta la larghezza massima a 1140px e centra il box automaticamente */
+  @apply w-full mx-auto max-w-[1140px];
+  /* Applica i margini esatti di Figma (16px su mobile, 32px dal tablet in su) come padding di sicurezza */
+  @apply px-[16px] md:px-[32px];
+}

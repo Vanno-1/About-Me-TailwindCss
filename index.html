@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="it" class="scroll-smooth scroll-pt-[20rem]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gabriele Vannini | About Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body>
+    <header
+      id="main-header"
+      class="group flex flex-col lg:flex-row lg:items-center lg:justify-between mt-8 fixed top-0 left-0 right-0 mx-auto w-[calc(100%-32px)] md:w-[calc(100%-64px)] max-w-[1140px] z-[100] bg-white/10 backdrop-blur-[10px] border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] overflow-hidden rounded-[44px] max-h-[88px] transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] [&.is-open]:max-h-[800px] [&.is-open]:rounded-[24px]"
+    >
+      <div
+        class="flex justify-between items-center w-full lg:w-auto py-2 pr-6 lg:pr-2 pl-2"
+      >
+        <img
+          src="./src/assets/images/profile-image.png"
+          alt="logo di Gabriele Vannini"
+          class="w-[72px] h-[72px] rounded-full object-fill"
+        />
+
+        <button
+          id="menu-toggle"
+          class="flex justify-center items-center bg-transparent border-none cursor-pointer relative w-12 h-12 lg:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="absolute w-8 h-8 text-[#212121] transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-100 scale-100 rotate-0 group-[.is-open]:opacity-0 group-[.is-open]:scale-50 group-[.is-open]:rotate-90"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="absolute w-8 h-8 text-[#212121] transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] opacity-0 scale-50 -rotate-90 group-[.is-open]:opacity-100 group-[.is-open]:scale-100 group-[.is-open]:rotate-0"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        class="w-full lg:w-auto pt-16 pr-12 pb-12 pl-0 lg:pt-0 lg:pb-0 lg:pr-10 opacity-0 pointer-events-none -translate-y-[10px] transition-all duration-300 ease-in-out group-[.is-open]:opacity-100 group-[.is-open]:pointer-events-auto group-[.is-open]:translate-y-0 lg:opacity-100 lg:pointer-events-auto lg:translate-y-0"
+      >
+        <ul
+          class="flex flex-col lg:flex-row items-end lg:items-center gap-12 lg:gap-8 p-0 m-0"
+        >
+          <li>
+            <a
+              href="https://ricordati-link-sito-dopo-acquisto-dominio"
+              class="no-underline text-[#212121] body-l hover:body-l-strong"
+              >Visita il mio Sito!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      class="layout-container flex flex-col items-center gap-[10rem] pt-[15rem] pb-[16rem]"
+    >
+      <div class="relative w-60 h-60 flex justify-center items-center">
+        <div class="absolute inset-[-1.5rem] animate-[spin_6s_linear_infinite]">
+          <div
+            id="aura-viva"
+            class="w-full h-full rounded-full bg-gradient-to-r from-[#F0D5A3] to-[#82A8D1] blur-xl opacity-100 transition-transform duration-[2000ms] ease-in-out"
+          ></div>
+        </div>
+        <img
+          class="relative w-48 h-48 lg:w-[240px] lg:h-[240px] object-cover rounded-full z-10"
+          src="./src/assets/images/io-e-cate.jpeg"
+          alt="Una foto insieme alla mia ragazza"
+        />
+      </div>
+
+      <div class="w-full flex justify-center">
+        <p
+          id="testo-animato"
+          class="text-[3rem] font-normal leading-none text-slate-800 transition-transform duration-100 ease-linear cursor-default inline-block"
+        >
+          Ciao!
+        </p>
+      </div>
+
+      <div
+        class="w-full flex flex-col items-center space-y-[4rem] max-w-[50rem]"
+      >
+        <div class="space-y-[1rem] pr-4">
+          <p>
+            Questa pagina del mio sito è dedicata a raccontare alcune delle cose
+            che mi rappresentano ma che in un CV non entrano.
+          </p>
+          <p>
+            L'obiettivo è quello di farmi conoscere un po' più nel profondo,
+            come farei con un amico/a.
+          </p>
+        </div>
+
+        <div
+          class="w-full max-w-[26rem] py-[2.5rem] px-[3rem] md:px-[5rem] space-y-[1.5rem] rounded-2xl bg-white/10 backdrop-blur-[10px] border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]"
+        >
+          <h2 class="text-center">INDICE:</h2>
+          <nav>
+            <ol
+              class="list-decimal pl-5 space-y-[1.25rem] body-m lg:body-l text-slate-800"
+            >
+              <li>
+                <a
+                  href="#1"
+                  class="inline-block hover:underline underline-offset-4 origin-left transition-all duration-200 ease-out hover:scale-105 hover:font-extrabold hover:decoration-2"
+                  >Curiosità su di me 🤓</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#2"
+                  class="inline-block hover:underline underline-offset-4 origin-left transition-all duration-200 ease-out hover:scale-105 hover:font-extrabold hover:decoration-2"
+                  >La Tecnologia 💻</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#3"
+                  class="inline-block hover:underline underline-offset-4 origin-left transition-all duration-200 ease-out hover:scale-105 hover:font-extrabold hover:decoration-2"
+                  >Il Design 🫟</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#4"
+                  class="inline-block hover:underline underline-offset-4 origin-left transition-all duration-200 ease-out hover:scale-105 hover:font-extrabold hover:decoration-2"
+                  >Il Gaming 🎮</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#5"
+                  class="inline-block hover:underline underline-offset-4 origin-left transition-all duration-200 ease-out hover:scale-105 hover:font-extrabold hover:decoration-2"
+                  >Lo Sport 🥋</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#6"
+                  class="inline-block hover:underline underline-offset-4 origin-left transition-all duration-200 ease-out hover:scale-105 hover:font-extrabold hover:decoration-2"
+                  >Gli Anime 🌀</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contacts-section"
+                  class="inline-block hover:underline underline-offset-4 origin-left transition-all duration-200 ease-out hover:scale-105 hover:font-extrabold hover:decoration-2"
+                  >Scrivimi! 👋🏻</a
+                >
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="space-y-[7rem] w-full max-w-[50rem]">
+        <div class="space-y-[1rem] pr-4" id="1">
+          <h1>1. Curiosità su di me 🤓</h1>
+          <p>
+            Sono <strong>Gabriele</strong>, classe 2001, nato e cresciuto Lucca.
+          </p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>
+              Il mio <strong>carattere</strong> è un mix: sarei timido di natura
+              ma sono diventato estroverso. Tuttavia, nonostante mi trovi bene
+              in mezzo alle persone, resto un tipo che ama la
+              <strong>solitudine</strong> e la
+              <strong>tranquillità</strong> (adoro infatti la Toscana, la quale
+              offre campagne e tanto verde).
+            </li>
+            <li>
+              Amo il <strong>cibo</strong>, soprattutto il salato, ma il mio
+              metabolismo non è molto d'accordo.
+            </li>
+            <li>
+              Non mi interessa un granché <strong>viaggiare</strong>, ma vorrei
+              esplorare maggiormente l'<strong>Italia</strong> e visitare il
+              <strong>Giappone</strong>.
+            </li>
+            <li>
+              Non seguo alcuno <strong>sport</strong>, preferisco praticarlo.
+            </li>
+            <li>
+              Mi piacciono moltissimo <strong>auto</strong> e
+              <strong>moto</strong>. Sto lavorando sodo per permettermele e
+              realizzare il mio sogno.
+            </li>
+            <li>
+              Sono un amante del <strong>minimalismo</strong> e della
+              <strong>funzionalità</strong>: mi infastidiscono i giri di parole
+              inutili e le cose belle ma complicate da usare.
+            </li>
+            <li>E tanti altri...</li>
+          </ul>
+        </div>
+
+        <div class="space-y-[1rem] pr-4" id="2">
+          <h2>2. La Tecnologia 💻</h2>
+          <p>
+            Il mio rapporto con la tecnologia ha inizio nel 2008 con il mio
+            <strong>primo computer</strong> e no, non sono un
+            <strong>guru</strong> dell'informatica che ha iniziato a programmare
+            a 10 anni, ero troppo impegnato a giocare al Nintendo DS.
+          </p>
+          <p>
+            Mentre gli altri bambini dicevano di voler fare gli astronauti, io
+            sognavo di aprire un <strong>negozio di informatica</strong>.. Mai
+            dire mai.
+          </p>
+          <p>
+            Questa passione mi ha spinto poi a scegliere
+            <strong>informatica e telecomunicazioni</strong> come indirizzo di
+            studi alle superiori.
+          </p>
+        </div>
+
+        <div class="space-y-[1rem] pr-4" id="3">
+          <h2>3. Il Design 🫟</h2>
+          <p>
+            La passione per il <strong>disegno</strong> è stata instillata da
+            mia mamma.
+          </p>
+          <p>
+            Ho iniziato con i personaggi degli anime che vedevo su Italia1 e K2
+            e, col tempo, la tecnologia ha invaso anche questo hobby, portandomi
+            a realizzare dei <strong>"prototipi"</strong> di smartphone e
+            dispositivi tecnologici. <br />
+            Sognavo di creare un telefono più bello dell'iPhone, con cui avrei
+            fatto successo. (L'ambizione c'è sempre!)
+          </p>
+          <p>
+            Solo in seguito ho scoperto l'esistenza di una figura che si occupa
+            dell'<strong>interfaccia digitale</strong> che appare su quegli
+            stessi smartphone. Così ho deciso che avrei studiato anche per
+            quello.
+          </p>
+          <p>
+            Ho quindi scelto come percorso di studi universitari
+            <strong>Design del Prodotto</strong> e, nel frattempo, ho iniziato
+            un master in <strong>UX/UI Design</strong>.
+          </p>
+        </div>
+
+        <div class="space-y-[1rem] pr-4" id="4">
+          <h2>4. Il Gaming 🎮</h2>
+          <p>Dalle medie il disegno ha lasciato spazio al PC.</p>
+          <p>
+            Anche se solitamente sono un tipo che sperimenta, per quanto
+            riguarda i giochi è accaduto il contrario.
+          </p>
+          <p>
+            A parte i giochi Pokémon, sono un appassionato di
+            <strong>FPS</strong>. Ho iniziato con <strong>Call of Duty</strong>,
+            per poi scoprire <strong>Team Fortress 2</strong>, che è stato il
+            mio primo amore. Il gioco con cui però mi identifico maggiormente
+            risale al 2016 e lo ritengo il naturale successore di TF2:
+            <strong>Overwatch</strong>. <br />
+            Ho passato 4 anni a giocarci e ho conosciuto moltissime persone,
+            alcune delle quali sono diventati amici con i quali abbiamo creato
+            un <strong>team</strong> per partecipare a vari tornei.
+          </p>
+        </div>
+
+        <div class="space-y-[1rem] pr-4" id="5">
+          <h2>5. Lo Sport 🥋</h2>
+          <p>
+            Ho iniziato con il <strong>Karate</strong> a 6 anni. Poiché anche
+            mio padre lo praticava da giovane, fu lui ad introdurmi a questo
+            sport. <br />
+            Sono arrivato ad un mese dall'esame per la cintura nera quando
+            iniziai ad annoiarmi e mollai, buttando anni di gare e sacrifici.
+          </p>
+          <p>
+            Ho anche fatto un corso di <strong>nuoto</strong> per qualche mese
+            durante la chiusura della palestra in estate, ma ricordo ben poco di
+            quel periodo.
+          </p>
+          <p>
+            Dalla terza superiore in poi è stato un susseguirsi di momenti di
+            attività ad altri di pausa. In ordine cronologico ho praticato:
+            <strong>palestra</strong>, <strong>calisthenics</strong>,
+            <strong>kickboxing</strong> e <strong>muay thai</strong>.
+          </p>
+          <p>
+            Nonostante abbia sempre fatto sport individuali mi piacerebbe
+            provare la <strong>pallavolo</strong>, spinto dalla curiosità data
+            dall'anime <strong>Haikyu!!</strong>.
+          </p>
+        </div>
+
+        <div class="space-y-[1rem] pr-4" id="6">
+          <h2>6. Gli anime 🌀</h2>
+          <p>
+            Da piccolo ne guardavo moltissimi, erano un'ossessione. <br />
+            Poi sono stati messi in secondo piano fino all'arrivo del lockdown,
+            durante il quale ho riscoperto questa passione, recuperando molti
+            titoli che mi ero perso.
+          </p>
+          <p>
+            Tra i preferiti si annoverano: <strong>Naruto</strong>,
+            <strong>Attack on Titan</strong> e il suddetto
+            <strong>Haikyu!!</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-full max-w-[50rem] space-y-[1rem] pr-4">
+        <p>
+          ..Ci sarebbero <strong>molte altre cose</strong> di cui parlare.
+          <br />
+          Magari, in futuro, <strong>aggiornerò</strong> questa pagina con altre
+          mie curiosità, tratti caratteriali, pensieri e passioni..
+        </p>
+      </div>
+
+      <div class="w-full max-w-[50rem] space-y-[1rem] pr-4">
+        <p class="font-bold">In caso te lo stessi chiedendo:</p>
+        <p>
+          No, <strong>niente di tutto ciò</strong> è stato scritto con
+          <strong>AI</strong>, quindi se ci sono errori ortografici e/o
+          sintattici vedi, anche loro, come una parte di me (da migliorare) 🤷🏻.
+        </p>
+      </div>
+
+      <div class="w-full max-w-[50rem] text-center pr-4">
+        <p class="text-[2rem] font-normal leading-none text-slate-800">
+          Ciao! 👋🏻
+        </p>
+      </div>
+
+      <div
+        class="relative w-full max-w-[40rem] flex justify-center items-center"
+        id="contacts-section"
+      >
+        <div
+          class="absolute inset-[-2.5rem] animate-[spin_10s_linear_infinite] -z-10"
+        >
+          <div
+            id="aura-contatti"
+            class="w-full h-full rounded-[40%] bg-gradient-to-r from-[#F0D5A3] to-[#82A8D1] blur-3xl opacity-80 transition-transform duration-[2000ms] ease-in-out"
+          ></div>
+        </div>
+
+        <div class="absolute inset-0 rounded-2xl bg-[#FAF8F5] -z-10"></div>
+
+        <div
+          class="w-full space-y-[6rem] bg-white/10 backdrop-blur-[10px] border border-white/30 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] flex flex-col items-center text-center px-[3rem] py-[4rem] rounded-2xl z-10"
+        >
+          <p>
+            Se hai trovato in quello che ho scritto qualcosa di interessante o
+            vuoi semplicemente fare una
+            <strong>chiacchierata con zero formalità</strong>..
+          </p>
+
+          <div
+            class="w-full flex flex-col items-center text-center space-y-[2rem]"
+          >
+            <h2>Scrivimi!</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="flex max-w-[30rem] justify-between items-center w-full px-[2rem] flex-wrap"
+          >
+            <a
+              href="https://www.linkedin.com/in/gabriele-vannini"
+              title="Visita il mio profilo Linkedin!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transition-all duration-[0.3s] ease-[ease] hover:-translate-y-[4px] hover:scale-[1.1] hover:opacity-[0.9]"
+            >
+              <img
+                class="w-[40px] h-[40px]"
+                src="./src/assets/images/linkedin-logo.svg"
+                alt="Logo di LinkedIn"
+              />
+            </a>
+
+            <a
+              href="mailto:vanninig01@gmail.com"
+              title="Scrivimi una mail!"
+              class="block w-[48px] h-[48px] transition-all duration-[0.3s] ease-[ease] hover:-translate-y-[4px] hover:scale-[1.1] hover:opacity-[0.9]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-full h-full text-[#212121]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.instagram.com/vannini_gabriele/"
+              title="Visita il mio profilo Instagram!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transition-all duration-[0.3s] ease-[ease] hover:-translate-y-[4px] hover:scale-[1.1] hover:opacity-[0.9]"
+            >
+              <img
+                class="w-[40px] h-[40px]"
+                src="./src/assets/images/instagram-logo.svg"
+                alt="Logo di Instagram"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="w-full h-fit pt-[5rem] pb-[1rem] bg-[#212121]">
+      <div class="layout-container flex flex-col items-stretch gap-[10rem]">
+        <div
+          class="flex flex-row justify-between items-center flex-wrap gap-[3.5rem]"
+        >
+          <img
+            class="w-[64px] lg:w-[160px] h-auto"
+            src="./src/assets/images/gv-products-logo-reverse.svg"
+            alt="GV Products"
+          />
+
+          <div class="flex flex-col items-end gap-[3.5rem]">
+            <a href="" class="no-underline text-[#ffffff]">Privacy Policy</a>
+            <a href="" class="no-underline text-[#ffffff]">Cookie Policy</a>
+            <a
+              class="button-reverse-m no-underline text-[#ffffff]"
+              href="#contacts-section"
+              >Contattami!</a
+            >
+          </div>
+        </div>
+
+        <p
+          class="text-center text-[#ffffff] text-[0.75rem] leading-[1rem] font-normal"
+        >
+          Copyright © 2026 - Tutti i diritti riservati.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
